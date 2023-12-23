@@ -20,8 +20,9 @@
 
 using System;
 using Meta.XR.Depth;
-using TMPro;
+//using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace DepthAPISample
 {
@@ -36,7 +37,7 @@ namespace DepthAPISample
         private int _currentOcclusionTypeIndex = (int)OcclusionType.NoOcclusion;
 
         [SerializeField]
-        private TextMeshProUGUI _currentOcclusionsModeText;
+        private Text _currentOcclusionsModeText;
 
         void Update()
         {

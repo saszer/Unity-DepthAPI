@@ -19,9 +19,8 @@
  */
 using System;
 using com.meta.xr.depthapi.utils;
-using TMPro;
 using UnityEngine;
-
+using UnityEngine.UI;
 namespace DepthAPISample
 {
     [RequireComponent(typeof(OcclusionDepthBias))]
@@ -29,7 +28,7 @@ namespace DepthAPISample
     {
         public Action<Poster> OnHighlight;
         [SerializeField] private GameObject _highlight;
-        [SerializeField] private TextMeshPro _biasText;
+        [SerializeField] private Text _biasText;
         [SerializeField] private AudioClip _highlightAudio;
         private OcclusionDepthBias _depthBiasComponent;
         private AudioSource _audioSource;

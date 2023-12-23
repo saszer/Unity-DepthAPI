@@ -19,7 +19,7 @@
  */
 
 using com.meta.xr.depthapi.utils;
-using TMPro;
+using UnityEngine.UI;
 using UnityEngine;
 
 namespace DepthAPISample
@@ -27,7 +27,7 @@ namespace DepthAPISample
     [RequireComponent(typeof(OcclusionDepthBias))]
     public class PosterPreview : MonoBehaviour
     {
-        [SerializeField] private TextMeshPro _biasText;
+        [SerializeField] private Text _biasText;
         private OcclusionDepthBias _depthBiasComponent;
         void Awake()
         {
